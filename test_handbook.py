@@ -34,3 +34,12 @@ def test_annoying_uoc():
 def test_cross_discipline():
     assert is_unlocked(["COMP1911", "MTRN2500"], "COMP2121") == True
     assert is_unlocked(["COMP1521"], "COMP2121") == True
+
+if __name__ == '__main__':
+    test_empty()
+    test_single()
+    test_compound()
+    test_simple_uoc()
+    test_annoying_uoc()
+    test_cross_discipline()
+    # print("All tests passed")
